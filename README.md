@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
 
-## include libraries [Ngrx, Ngrx/entity, Ngrx/effect, Ngrx/store](https://ngrx.io) version 11.1.1
+## Include libraries [ngrx/store, ngrx/entity, ngrx/effect](https://ngrx.io) version 11.1.1
 
 ## Development server
 
