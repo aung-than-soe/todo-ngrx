@@ -5,7 +5,7 @@ import { of, throwError } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 
 import * as TodoActions from './todo.actions';
-import { TodoService } from 'src/app/services/todo.service';
+import { TodoService } from '../../services/todo.service';
 
 @Injectable()
 export class TodoEffects {

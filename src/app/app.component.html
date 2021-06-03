@@ -34,7 +34,7 @@
         <td [ngStyle]="{'display': editId !== t.id ? undefined: 'none'}">{{ t.title }}</td>
         <td colspan="3">
           <div class="row">
-            <div class="col-auto">
+            <div class="col-auto" *ngIf="!t.completed">
               <button class="btn btn-outline-dark btn-sm" (click)="onEditOrSave(t)">
                 <i class="bi" [class]="editId !== t.id ? 'bi-pencil-square' : 'bi-save2-fill'"></i>
               {{editId !== t.id ? 'edit': 'save'}}</button>
@@ -42,7 +42,7 @@
             <div class="col-auto">
               <button class="btn btn-outline-dark btn-sm" (click)="onDelete(t.id)">Delete</button>
             </div>
-            <div class="col-auto">
+            <div class="col-auto" *ngIf="!t.completed">
               <button class="btn btn-outline-dark btn-sm" (click)="onCancel()">cancel</button>
             </div>
           </div>
