@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from '@environment';
-import { reducers, metaReducers } from '@appstore/reducer.index';
-import { TodoEffects } from '@appstore/todo/todo.effects';
+import { environment } from 'src/environments/environment';
+import { TodoEffects } from './store/todo/todo.effects';
+import { reducers, metaReducers } from './store/reducer.index';
 
 @NgModule({
   declarations: [AppComponent],

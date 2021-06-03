@@ -2,7 +2,7 @@ import {
   ActionReducerMap,
   MetaReducer
 } from '@ngrx/store';
-import { environment } from '@environment';
+import { environment } from 'src/environments/environment';
 import * as fromTodo from './todo/todo.reducer';
 
 

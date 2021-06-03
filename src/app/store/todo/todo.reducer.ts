@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
-import { Todo } from '@models/todo.model';
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import * as TodoActions from './todo.actions';
+import { Todo } from 'src/app/models/todo.model';
 
 export const todoFeatureKey = 'todo';
 

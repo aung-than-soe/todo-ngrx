@@ -19,16 +19,7 @@
     "lib": [
       "es2018",
       "dom"
-    ],
-    "paths": {
-      "@environment": [
-        "src/environments/environment.ts",
-        "src/environments/environment.prod.ts"
-      ],
-      "@models/*": ["src/app/models/*"],
-      "@services/*": ["src/app/services/*"],
-      "@appstore/*": ["src/app/store/*"]
-    }
+    ]
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,

@@ -1,11 +1,11 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@appstore/reducer.index';
-import * as TodoActions from '@appstore/todo/todo.actions';
+import * as TodoActions from './store/todo/todo.actions';
 import { Observable } from 'rxjs';
-import { Todo } from '@models/todo.model';
-import { selectAllTodos } from '@appstore/todo/todo.selector';
 import { distinctUntilChanged } from 'rxjs/operators';
+import { Todo } from './models/todo.model';
+import { AppState } from './store/reducer.index';
+import { selectAllTodos } from './store/todo/todo.selector';
 
 @Component({
   selector: 'app-root',

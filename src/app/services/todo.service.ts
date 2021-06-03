@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Todo } from 'src/app/models/todo.model';
-import { environment } from '@environment';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
